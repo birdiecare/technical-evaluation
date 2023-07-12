@@ -1,0 +1,19 @@
+{
+  "name": "technical-evaluation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"yarn workspace api start\" \"yarn workspace client start\" --names \"api,client\" --prefix-colors \"bgBlue.bold,bgMagenta.bold\""
+  },
+  "repository": "git@github.com:birdiecare/technical-evaluation.git",
+  "author": "John Clifford <john.clifford@birdie.care>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "src/api",
+    "src/client"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

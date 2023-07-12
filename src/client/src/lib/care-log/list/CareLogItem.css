@@ -1,0 +1,12 @@
+.care-log-item {
+    display: flex;
+}
+.care-log-meta {
+    flex: 0;
+    flex-basis: 250px;
+}
+
+.care-log-item article {
+    margin: 0;
+    flex: 1;
+}
